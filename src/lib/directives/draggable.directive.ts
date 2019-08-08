@@ -13,12 +13,12 @@ export class DraggableDirective {
   }
 
   @HostListener('mousedown', ['$event'])
-  private onMouseDown(event: MouseEvent) {
+  onMouseDown(event: MouseEvent) {
     this.dragStart(event);
   }
 
   @HostListener('dragstart', ['$event'])
-  private onDragStart(event: DragEvent) {
+  onDragStart(event: DragEvent) {
     this.dragStart(event);
   }
 

@@ -22,7 +22,7 @@ export class SvgridComponent {
     this.actualScale = Math.max(value, 0);
   }
 
-  private onGridDrag(event: MouseEvent | DragEvent) {
+  onGridDrag(event: MouseEvent | DragEvent) {
     this.viewBoxPosX += event.movementX;
     this.viewBoxPosY += event.movementY;
 
