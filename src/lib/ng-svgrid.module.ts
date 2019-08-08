@@ -1,10 +1,25 @@
 import {NgModule} from '@angular/core';
-import {NgSvgridComponent} from './ng-svgrid.component';
+import {CommonModule} from '@angular/common';
+
+import * as Components from './components';
+import * as Directives from './directives';
 
 @NgModule({
-    declarations: [NgSvgridComponent],
-    imports: [],
-    exports: [NgSvgridComponent]
+  imports: [
+    CommonModule
+  ],
+  declarations: [
+    Components.GridComponent,
+    Components.GridItemComponent,
+    Components.SvgridComponent,
+    Directives.DraggableDirective
+  ],
+  exports: [
+    Components.GridComponent,
+    Components.GridItemComponent,
+    Components.SvgridComponent,
+    Directives.DraggableDirective
+  ]
 })
 export class NgSvgridModule {
 }

@@ -1,0 +1,3 @@
+<svg:g [ngStyle]='{"transform": transform, "user-select": "none"}'>
+  <ng-content></ng-content>
+</svg:g>

@@ -1,0 +1,5 @@
+<svg (dragged)="drag.emit($event)" [attr.viewBox]="viewbox" ngsDraggable>
+  <g [ngStyle]="{'transform': viewBoxTransform}">
+    <ng-content></ng-content>
+  </g>
+</svg>

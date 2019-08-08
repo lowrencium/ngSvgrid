@@ -1,0 +1,11 @@
+<div #wrapper id="wrapper">
+  <ngs-grid
+    (drag)="onGridDrag($event)"
+    [scale]="scale"
+    [viewPosX]="viewBoxPosX"
+    [viewPosY]="viewBoxPosY"
+    [viewboxHeight]="wrapper?.offsetHeight"
+    [viewboxWidth]="wrapper?.offsetWidth">
+    <ng-content></ng-content>
+  </ngs-grid>
+</div>
