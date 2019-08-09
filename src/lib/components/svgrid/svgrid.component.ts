@@ -19,7 +19,7 @@ export class SvgridComponent {
 
   @Input()
   set scale(value: number) {
-    this.actualScale = Math.max(value, 0);
+    this.actualScale = Math.max(value, 1);
   }
 
   onGridDrag(event: MouseEvent | DragEvent) {

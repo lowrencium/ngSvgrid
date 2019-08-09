@@ -10,15 +10,15 @@ import * as Directives from './directives';
   ],
   declarations: [
     Components.GridComponent,
-    Components.GridItemComponent,
     Components.SvgridComponent,
-    Directives.DraggableDirective
+    Directives.DraggableDirective,
+    Directives.GridItemDirective,
   ],
   exports: [
     Components.GridComponent,
-    Components.GridItemComponent,
     Components.SvgridComponent,
-    Directives.DraggableDirective
+    Directives.DraggableDirective,
+    Directives.GridItemDirective,
   ]
 })
 export class NgSvgridModule {
